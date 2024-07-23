@@ -11,4 +11,4 @@
 <a href="https://linkedin.com/in/prateekverma0" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="prateekverma0" height="30" width="40" /></a>
 </p>
 <a href="https://github.com/prtkvs/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kevinfengcs88&theme=github_dark&layout=compact&hide_border=true" /></a>
-<p>How to reach me: <a href="mailto:prateek222rithik@gmail.com">prateek222rithik@gmail.com</a></p>
+<p>Mail: <a href="mailto:prateek222rithik@gmail.com">prateek222rithik@gmail.com</a></p>
