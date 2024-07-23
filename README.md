@@ -1,4 +1,4 @@
-<h3 align="center">I'm a 3rd year student pursuing Bachelor's in Electronics and Communication Engineering🎓 from BIT MESRA🏫. I'm a passionate learner who's always willing to learn and work across technologies and domains. I love to explore new technologies and leverage them to solve real-life problems. I'm currently into Web Development and working on my Data Structures and Algorithms skills.</h3>
+<h3 align="center">I'm a 3rd year student pursuing Bachelor's in Electronics and Communication Engineering🎓 from BIT MESRA. I'm a passionate learner who's always willing to learn and work across technologies and domains. I love to explore new technologies and leverage them to solve real-life problems. I'm currently into Web Development and working on my Data Structures and Algorithms skills.</h3>
 <img align="right" alt="Coding" width = "400" src="https://user-images.githubusercontent.com/57133330/188281408-c67df9ee-fd1f-4b37-833b-f02848f1ce02.gif">
 
 <br>
