@@ -9,6 +9,26 @@
 <p align="left">
 <a href="https://twitter.com/prtkv3" target="blank"><img align="center" src="https://cdn.prod.website-files.com/5d66bdc65e51a0d114d15891/64cebdd90aef8ef8c749e848_X-EverythingApp-Logo-Twitter.jpg" alt="prtkv3" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/prateekverma0" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="prateekverma0" height="30" width="40" /></a>
-</p>
-<a href="https://github.com/prtkvs/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kevinfengcs88&theme=github_dark&layout=compact&hide_border=true" /></a>
-<p>Mail: <a href="mailto:prateek222rithik@gmail.com">prateek222rithik@gmail.com</a></p>
+</p><p>Mail: <a href="mailto:prateek222rithik@gmail.com">prateek222rithik@gmail.com</a></p>
+<!-- languages mostly used -->
+<div id="stats"></div>
+    <script>
+        const fetchStats = async () => {
+            const repos = await (await fetch(`https://api.github.com/users/prtkvs/repos`)).json();
+            const stats = {};
+            for (const repo of repos) {
+                const langs = await (await fetch(repo.languages_url)).json();
+                for (const [lang, bytes] of Object.entries(langs)) stats[lang] = (stats[lang] || 0) + bytes;
+            }
+            const sortedStats = Object.entries(stats).sort((a, b) => b[1] - a[1]);
+            const totalBytes = sortedStats.reduce((sum, [, bytes]) => sum + bytes, 0);
+            document.getElementById('stats').innerHTML = sortedStats.map(([lang, bytes]) => `
+                <div class="language">
+                    <span>${lang}</span>
+                    <div style="width: ${((bytes / totalBytes) * 100).toFixed(2)}%; background-color: ${'#' + Math.floor(Math.random() * 16777215).toString(16)};" class="bar"></div>
+                    <span>${((bytes / totalBytes) * 100).toFixed(2)}%</span>
+                </div>
+            `).join('');
+        };
+        fetchStats();
+    </script>
